@@ -35,12 +35,20 @@
   }
   .pdf-container {
     display: flex;
-    justify-content: center;  /* canh giữa ngang */
+    justify-content: center; /* canh ngang giữa */
     margin: 0;
     height: 100vh;
   }
+
   .pdf-frame {
     width: 90%;
     height: 100%;
     border: none;
+  }
+
+  @media (max-width: 768px) {
+    .pdf-frame {
+      width: 100%;   /* full chiều ngang */
+      height: 100vh; /* cao toàn màn hình */
+    }
   }
