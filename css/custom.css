@@ -33,3 +33,14 @@
     background-image: -webkit-linear-gradient(90deg, #654ea3 0%, #eaafc8 100%);
     background-image: -ms-linear-gradient(90deg, #654ea3 0%, #eaafc8 100%);
   }
+  .pdf-container {
+    display: flex;
+    justify-content: center;  /* canh giữa ngang */
+    margin: 0;
+    height: 100vh;
+  }
+  .pdf-frame {
+    width: 90%;
+    height: 100%;
+    border: none;
+  }
