@@ -183,7 +183,7 @@
 	@media(max-width:800px){
 		.info-content{
 			text-align:center;
-			padding: 80px 30px 80px 0;
+			padding: 20px 20px 20px 0;
 		}
 	}
 
@@ -191,7 +191,7 @@
 	.info-content {
 		box-shadow: 0px 0px 50px 0px rgba(157, 157, 157, 0.3);	
 		@include media-breakpoint-down(xs) {
-			margin-top: 30px;
+			margin-top: 10px;
 		}
 		position: relative;
 		&:after {
@@ -202,7 +202,7 @@
 			top: 0;
 			z-index: 2;
 			background: $white;
-			width: 70px;
+			width: 10px;
 			height: 100%;
 			@include media-breakpoint-down(md) {
 				width: 50px;
@@ -214,20 +214,20 @@
 		background: $white;
 		padding: 60px 40px 60px 0px;
 		@include media-breakpoint-down(md) {
-			padding: 30px 30px 30px 0;
+			padding: 10px 10px 10px 0;
 		}
 		@include media-breakpoint-down(xs) {
-			padding: 30px;
+			padding: 10px;
 		}
 		h1 {
 			line-height: 1.15em;
-			margin-bottom: 30px;
+			margin-bottom: 10px;
 		}
 		.meta{
 			color:$black;
 			font-weight:400;
 			font-size:14px;
-			margin-top:20px;
+			margin-top:10px;
 		}
 	}
 

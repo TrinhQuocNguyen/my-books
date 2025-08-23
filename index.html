@@ -47,6 +47,7 @@
 			            <ul>
 			              <li><a href="b_tu_hoc_trong_thoi_dai_ai.html">Tự Học Trong Thời Đại AI</a></li>
 			              <li><a href="b_dam_nghi_nguoc.html">Dám Nghĩ Ngược</a></li>
+			              <li><a href="b_dam_so_vo.html">Dám Sợ Vợ</a></li>
 			            </ul>
 			          </li>
 			        </ul>
@@ -68,57 +69,18 @@
 			</section>		
 			<!-- End banner Area -->
 
-			<!-- Start course Area -->
-			<section class="course-area section-gap" id="course">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-9">
-							<div class="title text-center">
-								<h1 class="mb-10">Top Books</h1>
-								<p>Hành trình tri thức bắt đầu từ một trang sách.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="active-course-carusel">
-							<div class="single-course item">
-								<img class="img-fluid" src="img/b_tu_hoc_2d.png" alt="">
-								<p class="sale-btn">For Sale</p>
-								<div class="details">
-									<a href="b_tu_hoc_trong_thoi_dai_ai.html"><h4>Tự Học Trong Thời Đại AI <br> <span class="price float-right">189K</span></h4></a>
-									<p>
-										Cuốn sách nhấn mạnh rằng AI không chỉ là thách thức, mà còn là cơ hội vàng cho người Việt nếu biết tận dụng. 
-										<br>Trong bối cảnh công nghệ phát triển nhanh chóng, việc tự học trở thành kỹ năng sống còn để thích nghi, nâng cao năng lực và nắm bắt cơ hội nghề nghiệp.
-									</p>
-								</div>
-							</div>
-							<div class="single-course item">
-								<img class="img-fluid" src="img/b_dam_nghi_nguoc_2d.png" alt="">
-								<p class="sale-btn">For Sale</p>
-								<div class="details">
-									<a href="b_dam_nghi_nguoc.html"><h4>Dám Nghĩ Ngược <br><span class="price float-right">189K</span></h4></a>	
-									<p>
-										Cuốn sách khuyến khích người đọc thoát khỏi lối mòn tư duy và thói quen chạy theo số đông. 
-										<br> Trong một xã hội nơi đa số chọn an toàn và quen thuộc, sách chỉ ra rằng giá trị thực sự và đột phá thường nằm ở những góc nhìn ngược chiều.
-									</p>
-								</div>
-							</div>
-							<div class="single-course item">
-								<img class="img-fluid" src="img/dam_nghi_khac.png" alt="">
-								<p class="sale-btn">For Sale</p>
-								<div class="details">
-									<a href="#"><h4>Dám Nghĩ Khác <br><span class="price float-right">...</span></h4></a>	
-									<p>
-										Cuốn sách khích lệ người đọc can đảm thoát khỏi kỳ vọng xã hội và chuẩn mực chung để sống đúng với bản thân. 
-										<br>Thay vì chạy theo con đường “an toàn” mà đám đông lựa chọn, sách nhấn mạnh giá trị của việc tự định nghĩa thành công, lắng nghe nội tâm và xây dựng cuộc đời theo cách riêng.
-									</p>
-								</div>
-							</div>								
-						</div>											
-					</div>
-				</div>	
-			</section>
-			<!-- End course Area -->
+			<!-- Start Top books Area -->	
+			<div id="top-books">
+				<script>
+					fetch("parts/top_books.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("top-books").innerHTML = data;
+					})
+					.catch(error => console.error("Can not load top_books.html:", error));
+				</script>
+			</div>>
+			<!-- End Top books Area -->
 		
 		<!-- About Generic Start -->
 		<div class="main-wrapper">
@@ -233,85 +195,64 @@
 			<!-- End testomial Area -->
 
 			<!-- Start Generic Area -->
-			<section class="about-generic-area section-gap">
-				<div class="container border-top-generic">
-					<h3 class="about-title mb-30">Elaboration about Generic Page</h3>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="img-text">
-								<img src="img/a.jpg" alt="" class="img-fluid float-left mr-20 mb-20">
-								<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
-						</div>
-						<div class="col-lg-12">
-							<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
-						</div>
-						<div class="col-md-12">
-							<div class="img-text">
-								<img src="img/a2.jpg" alt="" class="img-fluid float-left mr-20 mb-20">
-								<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+<!-- Start Generic Area -->
+<section class="about-generic-area section-gap">
+    <div class="container border-top-generic">
+        <h3 class="about-title mb-30"><b>Open Wisdom - Tri Thức Mở</b></h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="img-text">
+                    <img src="img/logo2.png" alt="Open Wisdom" class="img-fluid float-left mr-20 mb-20">
+                    <p><b>Open Wisdom – Tri Thức Mở</b> không phải chỉ là một thư viện trên mạng. 
+                        Nó giống như một hiên nhà rộng, nơi bất kỳ ai cũng có thể ghé vào, 
+                        lặng ngồi mở một cuốn sách và để tâm hồn mình thấm dần ánh sáng. 
+                        Ở đây, sách không để làm sang, cũng không để chất đầy kệ cho đủ hình thức. 
+                        Mỗi quyển được chọn, được gìn giữ, đều mang theo một tấm lòng 
+                        và một hạt giống gieo vào đời.</p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <p>Tri thức khi đóng kín thì thành vô dụng, nhưng khi mở ra thì hóa thành dòng suối mát, nuôi dưỡng người đọc, nối người đi trước với lớp người sau.
+					Mỗi cuốn sách, mỗi bài viết được chia sẻ  ở đây là 
+                    một lời mời gọi cùng nhau suy tư, chiêm nghiệm và trưởng thành. 
+                    Không phân biệt bạn là ai, đến từ đâu, <b>Open Wisdom – Tri Thức Mở</b> mở ra như một 
+                    khoảng trời chung, nơi tri thức được lan tỏa và được làm mới 
+                    bởi chính cộng đồng.</p>
+            </div>
+            <div class="col-lg-12">
+                <p>Chúng tôi tin rằng tri thức chỉ thực sự sống khi nó được chia sẻ, 
+                    được trao đổi và được ứng dụng. Vì vậy, <b>Open Wisdom – Tri Thức Mở</b> không chỉ 
+                    dừng ở việc lưu giữ sách hay bài viết, mà còn khuyến khích 
+                    sự tham gia, sự đối thoại và sự cộng hưởng của tất cả mọi người.</p>
+            </div>
+            <div class="col-md-12">
+                <div class="img-text">
+                    <!-- <img src="img/a2.jpg" alt="Tri Thức Mở" class="img-fluid float-left mr-20 mb-20"> -->
+                    <p>Hãy coi <b>Open Wisdom  - Tri Thức Mở</b> như một nơi bạn có thể trở về bất cứ lúc nào 
+                        để tìm lại sự tĩnh lặng và nuôi dưỡng tinh thần học hỏi. 
+                        Mỗi lần dừng chân ở đây, bạn không chỉ đọc một cuốn sách, 
+                        mà còn chạm đến những suy nghĩ, trải nghiệm và tâm tình 
+                        của những người đã đi trước.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Generic Start -->
+
 			<!-- End Generic Start -->		
 
-			<!-- start footer Area -->		
-			<footer class="footer-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h6>Thông Tin OPEN WISDOM</h6>
-								<p>
-									OPEN WISDOM là thư viện sách, được tạo ra với mong muốn chia sẻ tri thức và những suy ngẫm giá trị đến cộng đồng.
-									Chúng tôi tin rằng mỗi cuốn sách là một hành trình mở ra góc nhìn mới, khơi gợi tinh thần học hỏi và khát vọng đổi thay.
-									<br><br>Thư viện sẽ không ngừng được mở rộng, bổ sung những tác phẩm mới, nhằm đồng hành cùng bạn đọc trên con đường tìm kiếm tri thức và phát triển bản thân.
-								</p>
-								<p class="footer-text">
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
-<!-- | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-5  col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h6>Bản Tin</h6>
-								<p>Nhận các thông tin mới nhất từ OPEN WISDOM.</p>
-								<div class="" id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-										<input class="form-control" name="EMAIL" placeholder="Nhập Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-			                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-			                            	<div style="position: absolute; left: -5000px;">
-												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-											</div>
-
-										<div class="info"></div>
-									</form>
-								</div>
-							</div>
-						</div>						
-						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-							<div class="single-footer-widget">
-								<h6>Kết Nối</h6>
-								<p>Kết nối với chúng tôi.</p>
-								<div class="footer-social d-flex align-items-center">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-dribbble"></i></a>
-									<a href="#"><i class="fa fa-behance"></i></a>
-								</div>
-							</div>
-						</div>							
-					</div>
-				</div>
-			</footer>	
+			<!-- Start footer Area -->		
+			<div id="footer">
+				<script>
+					fetch("parts/footer.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("footer").innerHTML = data;
+					})
+					.catch(error => console.error("Can not load footer.html:", error));
+				</script>
+			</div>>
 			<!-- End footer Area -->
 			
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
