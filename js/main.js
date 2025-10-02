@@ -189,7 +189,7 @@ $(document).ready(function(){
     });
 
         $('.active-tstimonial-carusel').owlCarousel({
-        items:3,
+        items:2,
         margin:30,
         autoplay:true,
         loop:true,
@@ -205,7 +205,7 @@ $(document).ready(function(){
                 items: 2,
             },
             900: {
-                items: 3,
+                items: 2,
             }
 
         }
