@@ -76,10 +76,29 @@
 					.then(response => response.text())
 					.then(data => {
 						document.getElementById("top-books").innerHTML = data;
+						// Initialize carousel after content is loaded
+						$('.active-course-carusel').owlCarousel({
+							items: 3,
+							loop: true,
+							margin: 30,
+							dots: true,
+							nav: true,
+							navText: ["<span class='lnr lnr-arrow-up'></span>",
+							"<span class='lnr lnr-arrow-down'></span>"],  
+							autoplay: true,                // Enable auto loop
+							autoplayTimeout: 3000,         // 3 seconds per slide (optional)
+							autoplayHoverPause: true,       // Pause on hover (optional)
+							responsive: {
+								0: { items: 1 },
+								480: { items: 1 },
+								768: { items: 2 },
+								900: { items: 3 }
+							}
+						});
 					})
 					.catch(error => console.error("Can not load top_books.html:", error));
 				</script>
-			</div>>
+			</div>
 			<!-- End Top books Area -->
 		
 		<!-- About Generic Start -->
@@ -252,7 +271,7 @@
 					})
 					.catch(error => console.error("Can not load footer.html:", error));
 				</script>
-			</div>>
+			</div>
 			<!-- End footer Area -->
 			
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>

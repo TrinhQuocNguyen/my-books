@@ -2949,3 +2949,11 @@ h6 {
 .switch-wrap p {
   margin: 0;
 }
+
+.fixed-size-image {
+  width: 220px;        /* Set your desired width */
+  height: 300px;       /* Set your desired height */
+  object-fit: contain;   /* Scale and crop to fill */
+  display: block;
+  margin: 0 auto;      /* Center the image horizontally */
+}
